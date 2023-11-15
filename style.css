@@ -1,0 +1,264 @@
+/* Reset no css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  color: #263138;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Cabeçalio */
+
+header {
+  position: fixed;
+  z-index: 999;
+  background-color: rgb(118, 113, 113);
+  width: 100%;
+  padding: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px var(--sombra1);
+}
+
+header a {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 4rem;
+  color: #ff725e;
+}
+
+header a:hover {
+  color: #ffffff;
+}
+
+/* Srção Hero */
+
+.seção-hero {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 6.4rem 8rem;
+  position: relative;
+  background-color: #dadada;
+  box-shadow: 0 2px 4px var(--sombra1);
+}
+
+.seção-hero h1 {
+  font-weight: 600;
+  margin: 1rem;
+  padding: 2rem 0;
+}
+
+.seção-hero p {
+  line-height: 2rem;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+.marque-sua-consulta {
+  background-color: #ff725e;
+  padding: 1rem 4rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+  color: blanchedalmond;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+.marque-sua-consulta:hover {
+  background-color: blanchedalmond;
+  color: #ff725e;
+}
+
+.conheça-nossa-clinica {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.bg-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+}
+
+/* Clinica */
+
+#clinica {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  row-gap: 6.4rem;
+  padding: 6.4rem 8rem;
+  background-color: #f0f0f0;
+}
+
+#clinica p {
+  padding: 2rem 0;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+#clinica li {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-left: 4rem;
+}
+
+/* Seção Farmacia */
+
+#farmacia {
+  box-shadow: 0 2px 4px var(--sombra1);
+  background-color: #dadada;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 6.4rem 8rem;
+}
+
+#farmacia p {
+  margin: 0 auto;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+/* Seção Duvidas */
+
+#duvidas {
+  display: flex;
+  padding: 6.4rem 8rem;
+  gap: 6.4rem;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#duvidas h2 {
+  margin-bottom: 3rem;
+}
+
+.duvidas {
+  position: relative;
+  width: 100%;
+}
+
+.duvidas h3 {
+  border: 0.2rem solid #ff725e;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 2.4rem 2.5rem;
+}
+
+.duvidas img {
+  position: absolute;
+  top: 3.2rem;
+  right: 2.4rem;
+}
+
+.container-duvidas {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.duvidas p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-right: 0.1rem solid #ff725e;
+  border-bottom: 0.1rem solid #ff725e;
+  border-left: 0.1rem solid #ff725e;
+  margin-bottom: 2rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+  margin-top: -0.9rem;
+  padding: 0 2.4rem 0 2.4rem;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.duvidas.ativa p {
+  height: fit-content;
+  overflow: visible;
+  opacity: 1;
+  padding: 2.4rem;
+}
+
+/* Rodape */
+
+footer {
+  background-color: rgb(118, 113, 113);
+  box-shadow: 0 2px 4px var(--sombra1);
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  padding: 4.4rem 8rem;
+}
+
+footer img {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+footer h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  width: 11rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 35rem;
+}
+
+footer p a {
+  color: #ff725e;
+  text-decoration: none;
+}
+
+/* Identidade */
+
+.identidade {
+  background-color: #263138;
+  color: white;
+  padding: 2.4rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.identidade a {
+  color: #ff725e;
+}
+
+.identidade a:hover {
+  font-size: 2rem;
+}
